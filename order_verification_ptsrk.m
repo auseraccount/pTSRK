@@ -27,7 +27,7 @@
     fprintf('Butcher tableau of TSRK(%d, %d):\n', stage, order);
     [tildeD tildeAB]
     syms x;
-    modify_flag = 2; %1: pTSRK1; 2: pTSRK2; 0: original IFRK
+    modify_flag = 2; %1: pTSRK1; 2: pTSRK2;
     hatD(1, 1) = sym(1); hatD(2, 2) = sym(1); orderp = order;
     if modify_flag == 1 % pTSRK1
         hatc(1) = sym(-1); hatc(2) = sym(0); psi(1) = sym(1); psi(2) = exp((1+c(2))*x);
