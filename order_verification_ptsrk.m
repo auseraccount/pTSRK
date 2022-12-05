@@ -121,7 +121,7 @@
             vpa(taylor(( hatB .* (c1.^m .* hatc1.^(1-m))') * tau(1:end-1, 2, 1+m2), x, 0, 'order', order-2), 6)
         end
     end
-    for m = 1:2
+    for m = 0:2
         vpa(taylor( hatB * tau(1:end-1, 3, 1+m), x, 0, 'order', order-2), 6)
     end
     if order == 4
